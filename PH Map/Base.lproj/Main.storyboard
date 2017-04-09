@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="qDa-oK-UTt">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Map-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainController" title="Map" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND, Biege Play.jpg" id="3qP-zD-ZnI">
+                                <rect key="frame" x="-40" y="-72" width="808" height="1141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JyI-hA-atS" customClass="OBShapedButton">
+                                <rect key="frame" x="305" y="39" width="109" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cagayan" image="LUZON, Cagayan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Cagayan"/>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Cagayan" popoverAnchorView="JyI-hA-atS" id="xSb-Ez-svw">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qub-a5-jEy" customClass="OBShapedButton">
+                                <rect key="frame" x="287" y="231" width="65" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Nueva Ecija" image="LUZON, Nueva Ecija.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Nueva Ecija" popoverAnchorView="qub-a5-jEy" id="1j4-Vt-M6z">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wY0-3N-9rl" customClass="OBShapedButton">
+                                <rect key="frame" x="264" y="69" width="55" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ilocos Sur" image="LUZON, Ilocos Sur.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Ilocos Sur" popoverAnchorView="wY0-3N-9rl" id="CW2-2s-KlY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PYv-Wa-WK7" customClass="OBShapedButton">
+                                <rect key="frame" x="270" y="51" width="62" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ilocos Norte" image="LUZON, Ilocos Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Ilocos Norte" popoverAnchorView="PYv-Wa-WK7" id="Llu-X6-jx2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rB2-D4-9xo" customClass="OBShapedButton">
+                                <rect key="frame" x="336" y="125" width="86" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Isabela" image="LUZON, Isabela.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Isabela" popoverAnchorView="rB2-D4-9xo" id="gf9-UN-U5q">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gQn-Fs-o6U" customClass="OBShapedButton">
+                                <rect key="frame" x="283" y="48" width="90" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Apayao" image="LUZON, Apayao.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Apayao" popoverAnchorView="gQn-Fs-o6U" id="eQt-fq-rjV">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0m4-Qm-zXp" customClass="OBShapedButton">
+                                <rect key="frame" x="310" y="127" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Kalinga" image="LUZON, Kalinga.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Kalinga" popoverAnchorView="0m4-Qm-zXp" id="9zd-bK-CJg">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gBE-HZ-bNj" customClass="OBShapedButton">
+                                <rect key="frame" x="283" y="97" width="57" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abra" image="LUZON, Abra.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Abra" popoverAnchorView="gBE-HZ-bNj" id="Wv0-8K-mNz">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sD0-kI-8ZZ" customClass="OBShapedButton">
+                                <rect key="frame" x="327" y="194" width="78" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aurora" image="LUZON, Aurora.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Aurora" popoverAnchorView="sD0-kI-8ZZ" id="BS8-PG-bys">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qk7-tm-ple" customClass="OBShapedButton">
+                                <rect key="frame" x="299" y="190" width="63" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Nueva Vizcaya" image="LUZON, Nueva Vizcaya.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Nueva Vizcaya" popoverAnchorView="qk7-tm-ple" id="di0-LG-Xdv">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XC0-et-EpT" customClass="OBShapedButton">
+                                <rect key="frame" x="327" y="187" width="62" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Quirino" image="LUZON, Quirino.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Quirino" popoverAnchorView="XC0-et-EpT" id="wsa-Hf-Wmo">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xVl-Jr-EsC" customClass="OBShapedButton">
+                                <rect key="frame" x="305" y="151" width="51" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mt. Province" image="LUZON, Mt. Province.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Mt. Province" popoverAnchorView="xVl-Jr-EsC" id="GuJ-rP-PGs">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gVE-yi-j2V" customClass="OBShapedButton">
+                                <rect key="frame" x="306" y="165" width="52" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ifugao" image="LUZON, Ifugao.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Ifugao" popoverAnchorView="gVE-yi-j2V" id="fuY-0c-uWW">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Olj-ps-7ZV" customClass="OBShapedButton">
+                                <rect key="frame" x="237" y="236" width="54" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zambales" image="LUZON, Zambales.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Zambales" popoverAnchorView="Olj-ps-7ZV" id="t0Y-PG-qbT">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nAQ-2o-W7O" customClass="OBShapedButton">
+                                <rect key="frame" x="281" y="363" width="68" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Batangas" image="LUZON, Batangas.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Batangas" popoverAnchorView="nAQ-2o-W7O" id="tb5-9o-P4Z">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NEB-sX-pMn" customClass="OBShapedButton">
+                                <rect key="frame" x="443" y="413" width="70" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Albay" image="LUZON, Albay.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Albay" popoverAnchorView="NEB-sX-pMn" id="4vJ-8L-IdR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7j0-py-axv" customClass="OBShapedButton">
+                                <rect key="frame" x="405" y="380" width="94" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camarines Sur" image="LUZON, Camarines Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Camarines Sur" popoverAnchorView="7j0-py-axv" id="x2Z-8z-EqC">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6bc-YK-0te" customClass="OBShapedButton">
+                                <rect key="frame" x="324" y="302" width="110" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Quezon" image="LUZON, Quezon.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Quezon" popoverAnchorView="6bc-YK-0te" id="Dge-Jc-WA2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tE0-m4-jQs" customClass="OBShapedButton">
+                                <rect key="frame" x="391" y="358" width="65" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camarines Norte" image="LUZON, Camarines Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Camarines Norte" popoverAnchorView="tE0-m4-jQs" id="YbR-5k-9pO">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="soO-iF-5et" customClass="OBShapedButton">
+                                <rect key="frame" x="318" y="351" width="35" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Laguna" image="LUZON, Laguna.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Laguna" popoverAnchorView="soO-iF-5et" id="Fjc-ma-48P">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x8N-mi-Cy9" customClass="OBShapedButton">
+                                <rect key="frame" x="323" y="325" width="25" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rizal" image="LUZON, Rizal.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Rizal" popoverAnchorView="x8N-mi-Cy9" id="DDr-Bf-E2I">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LhZ-bc-SiU" customClass="OBShapedButton">
+                                <rect key="frame" x="286" y="344" width="44" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cavite" image="LUZON, Cavite.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Cavite" popoverAnchorView="LhZ-bc-SiU" id="Put-oA-f7F">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qke-F7-3da" customClass="OBShapedButton">
+                                <rect key="frame" x="309" y="331" width="21" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="National Capital Region" image="LUZON, Natinal Capital Region.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="National Capital Region" popoverAnchorView="Qke-F7-3da" id="ivp-VS-Rhs">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7WJ-31-I8x" customClass="OBShapedButton">
+                                <rect key="frame" x="281" y="286" width="68" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bulacan" image="LUZON, Bulacan.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Bulacan" popoverAnchorView="7WJ-31-I8x" id="syF-B3-arZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Jd-Xw-HwI" customClass="OBShapedButton">
+                                <rect key="frame" x="260" y="254" width="51" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tarlac" image="LUZON, Tarlac.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Tarlac" popoverAnchorView="6Jd-Xw-HwI" id="rNf-eY-5Qt">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h6l-49-GUJ" customClass="OBShapedButton">
+                                <rect key="frame" x="261" y="177" width="39" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="La Union" image="LUZON, La Union.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="La Union" popoverAnchorView="h6l-49-GUJ" id="A5f-Y8-Yuj">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bkb-h1-jXM" customClass="OBShapedButton">
+                                <rect key="frame" x="232" y="215" width="88" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pangasinan" image="LUZON, Pangasinan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Pangasinan" popoverAnchorView="bkb-h1-jXM" id="YyN-7A-A0Y">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dcy-l7-hVe" customClass="OBShapedButton">
+                                <rect key="frame" x="283" y="173" width="36" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Benguet" image="LUZON, Benguet.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Benguet" popoverAnchorView="dcy-l7-hVe" id="SKp-AJ-8BC">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pjx-Dp-44K" customClass="OBShapedButton">
+                                <rect key="frame" x="259" y="321" width="36" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bataan" image="LUZON, Bataan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Bataan" popoverAnchorView="pjx-Dp-44K" id="Mbr-ku-f6I">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fon-zI-xoY" customClass="OBShapedButton">
+                                <rect key="frame" x="277" y="296" width="38" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pampanga" image="LUZON, Pampanga.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Pampanga" popoverAnchorView="fon-zI-xoY" id="ghE-jR-u3x">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ROK-u5-owO" customClass="OBShapedButton">
+                                <rect key="frame" x="497" y="374" width="39" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Catanduanes" image="LUZON, Catanduanes.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Catanduanes" popoverAnchorView="ROK-u5-owO" id="UXQ-gT-iB5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="79p-S7-MTs" customClass="OBShapedButton">
+                                <rect key="frame" x="354" y="418" width="39" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Marinduque" image="LUZON, Marinduque.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Marinduque" popoverAnchorView="79p-S7-MTs" id="yiq-4w-8io">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jcD-4L-qMt" customClass="OBShapedButton">
+                                <rect key="frame" x="264" y="422" width="75" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Occidental Mindoro" image="LUZON, Occidental Mindoro.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Occidental Mindoro" popoverAnchorView="jcD-4L-qMt" id="C9L-a2-64M">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pNA-Pp-mlu" customClass="OBShapedButton">
+                                <rect key="frame" x="298" y="426" width="53" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Oriental Mindoro" image="LUZON, Oriental Mindoro.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Oriental Mindoro" popoverAnchorView="pNA-Pp-mlu" id="TdA-Bw-5lM">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Juj-3C-3Tb" customClass="OBShapedButton">
+                                <rect key="frame" x="53" y="501" width="209" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Palawan" image="LUZON, Palawan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Palawan" popoverAnchorView="Juj-3C-3Tb" id="Vxr-Re-sWe">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qLA-qL-vGZ" customClass="OBShapedButton">
+                                <rect key="frame" x="368" y="469" width="58" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Romblon" image="LUZON, Romblon.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Romblon" popoverAnchorView="qLA-qL-vGZ" id="gq0-Ws-6pm">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XeG-aS-o2r" customClass="OBShapedButton">
+                                <rect key="frame" x="415" y="442" width="104" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Masbate" image="LUZON, Masbate.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Masbate" popoverAnchorView="XeG-aS-o2r" id="baq-xk-YSV">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wOg-hI-ZVi" customClass="OBShapedButton">
+                                <rect key="frame" x="469" y="442" width="54" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sorsogon" image="LUZON, Sorsogon.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Sorsogon" popoverAnchorView="wOg-hI-ZVi" id="HbC-zX-1aG">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EZr-BP-lCu" customClass="OBShapedButton">
+                                <rect key="frame" x="515" y="485" width="79" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Northern Samar" image="VISAYAS, Northern Samar.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Northern Samar" popoverAnchorView="EZr-BP-lCu" id="u5J-cj-G8a">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rHE-qW-8Zq" customClass="OBShapedButton">
+                                <rect key="frame" x="517" y="501" width="83" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Samar" image="VISAYAS, Samar.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Samar" popoverAnchorView="rHE-qW-8Zq" id="EkJ-JV-DW3">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0aT-gd-vTA" customClass="OBShapedButton">
+                                <rect key="frame" x="575" y="491" width="45" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eastern Samar" image="VISAYAS, Eastern Samar.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Eastern Samar" popoverAnchorView="0aT-gd-vTA" id="Bbp-QB-QEH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xdj-uD-ugC" customClass="OBShapedButton">
+                                <rect key="frame" x="514" y="535" width="32" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Biliran" image="VISAYAS, Biliran.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Biliran" popoverAnchorView="xdj-uD-ugC" id="Bfj-NS-m9k">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ldp-0u-9Up" customClass="OBShapedButton">
+                                <rect key="frame" x="508" y="561" width="72" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leyte" image="VISAYAS, Leyte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Leyte" popoverAnchorView="Ldp-0u-9Up" id="JPm-SW-LKR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mgH-9V-FFV" customClass="OBShapedButton">
+                                <rect key="frame" x="544" y="611" width="50" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Southern Leyte" image="VISAYAS, Southern Leyte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Southern Leyte" popoverAnchorView="mgH-9V-FFV" id="y3B-ND-ptI">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vbw-yc-gWG" customClass="OBShapedButton">
+                                <rect key="frame" x="450" y="568" width="69" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cebu" image="VISAYAS, Cebu.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Cebu" popoverAnchorView="vbw-yc-gWG" id="5Qj-CB-fPk">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iaS-Uw-nSL" customClass="OBShapedButton">
+                                <rect key="frame" x="369" y="542" width="45" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aklan" image="VISAYAS, Aklan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Aklan" popoverAnchorView="iaS-Uw-nSL" id="kph-mv-qjl">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pig-vz-F3n" customClass="OBShapedButton">
+                                <rect key="frame" x="366" y="544" width="33" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Antique" image="VISAYAS, Antique.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Antique" popoverAnchorView="pig-vz-F3n" id="dRt-fA-fCH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z2P-tV-DJ2" customClass="OBShapedButton">
+                                <rect key="frame" x="382" y="550" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Capiz" image="VISAYAS, Capiz.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Capiz" popoverAnchorView="Z2P-tV-DJ2" id="ltz-VN-ux3">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BaO-FI-Jwp" customClass="OBShapedButton">
+                                <rect key="frame" x="372" y="561" width="86" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Iloilo" image="VISAYAS, Iloilo.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Iloilo" popoverAnchorView="BaO-FI-Jwp" id="3r6-SK-3Tu">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QjY-WN-Ubc" customClass="OBShapedButton">
+                                <rect key="frame" x="382" y="627" width="40" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guimaras" image="VISAYAS, Guimaras.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Guimaras" popoverAnchorView="QjY-WN-Ubc" id="rut-8z-u3W">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qKu-uu-e1g" customClass="OBShapedButton">
+                                <rect key="frame" x="392" y="599" width="87" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Negros Occidental" image="VISAYAS, Negros Occidental.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Negros Occidental" popoverAnchorView="qKu-uu-e1g" id="YLi-ag-jDq">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H6D-dx-R6x" customClass="OBShapedButton">
+                                <rect key="frame" x="414" y="629" width="55" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Negros Oriental" image="VISAYAS, Negros Oriental.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Negros Oriental" popoverAnchorView="H6D-dx-R6x" id="vIL-ll-aGX">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SeO-Kk-bWU" customClass="OBShapedButton">
+                                <rect key="frame" x="462" y="723" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Siquijor" image="VISAYAS, Siquijor.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Siquijor" popoverAnchorView="SeO-Kk-bWU" id="RVm-Ct-7Fe">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ho8-z9-e4h" customClass="OBShapedButton">
+                                <rect key="frame" x="482" y="657" width="63" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bohol" image="VISAYAS, Bohol.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Bohol" popoverAnchorView="Ho8-z9-e4h" id="fHJ-nc-ITS">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Ug-xe-Dsz" customClass="OBShapedButton">
+                                <rect key="frame" x="595" y="641" width="44" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dinagat Islands" image="MINDANAO, Dinagat Islands.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Dinagat Islands" popoverAnchorView="7Ug-xe-Dsz" id="PR3-b4-ust">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21U-4b-xSi" customClass="OBShapedButton">
+                                <rect key="frame" x="578" y="683" width="56" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Surigao Del Norte" image="MINDANAO, Surigao Del Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Surigao Del Norte" popoverAnchorView="21U-4b-xSi" id="gRS-vC-ayJ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AH6-yt-eG4" customClass="OBShapedButton">
+                                <rect key="frame" x="578" y="700" width="36" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agusan Del Norte" image="MINDANAO, Agusan Del Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Agusan Del Norte" popoverAnchorView="AH6-yt-eG4" id="Rxk-yV-pG2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hiR-pX-jsG" customClass="OBShapedButton">
+                                <rect key="frame" x="577" y="726" width="72" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agusan Del Sur" image="MINDANAO, Agusan Del Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Agusan Del Sur" popoverAnchorView="hiR-pX-jsG" id="cVp-32-dSk">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q0U-f9-mC1" customClass="OBShapedButton">
+                                <rect key="frame" x="612" y="698" width="53" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Surigao Del Sur" image="MINDANAO, Surigao Del Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Surigao Del Sur" popoverAnchorView="Q0U-f9-mC1" id="gIn-Wz-ZK8">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mbA-tQ-TqP" customClass="OBShapedButton">
+                                <rect key="frame" x="568" y="836" width="51" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Davao Del Sur" image="MINDANAO, Davao Del Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Davao Del Sur" popoverAnchorView="mbA-tQ-TqP" id="SVl-8M-Er3">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T36-BS-MZh" customClass="OBShapedButton">
+                                <rect key="frame" x="601" y="810" width="59" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Compostela Valley" image="MINDANAO, Compostela Valley.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Compostela Valley" popoverAnchorView="T36-BS-MZh" id="nrX-8h-tMn">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LlT-F0-uhO" customClass="OBShapedButton">
+                                <rect key="frame" x="577" y="803" width="55" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Davao Del Norte" image="MINDANAO, Davao Del Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Davao Del Norte" popoverAnchorView="LlT-F0-uhO" id="Z2q-KP-yhh">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rt5-z8-4rC" customClass="OBShapedButton">
+                                <rect key="frame" x="520" y="822" width="66" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cotabato" image="MINDANAO, Cotabato.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Cotabato" popoverAnchorView="Rt5-z8-4rC" id="Iwn-m9-rMb">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jeb-Dn-O9S" customClass="OBShapedButton">
+                                <rect key="frame" x="496" y="833" width="71" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Maguindanao" image="MINDANAO, Maguindanao.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Maguindanao" popoverAnchorView="Jeb-Dn-O9S" id="9Wv-Ch-dpU">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SEb-HJ-uKz" customClass="OBShapedButton">
+                                <rect key="frame" x="515" y="897" width="80" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="South Cotabato" image="MINDANAO, South Cotabato.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="South Cotabato" popoverAnchorView="SEb-HJ-uKz" id="AKQ-01-KzK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EVy-mF-uwc" customClass="OBShapedButton">
+                                <rect key="frame" x="516" y="898" width="94" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sarangani" image="MINDANAO, Sarangani.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Sarangani" popoverAnchorView="EVy-mF-uwc" id="h0U-RC-0Ad">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fvm-CQ-3zK" customClass="OBShapedButton">
+                                <rect key="frame" x="584" y="905" width="33" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Davao Occidental" image="MINDANAO, Davao Occidental.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Davao Occidental" popoverAnchorView="Fvm-CQ-3zK" id="veV-hb-hBP">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b3B-xk-OQn" customClass="OBShapedButton">
+                                <rect key="frame" x="471" y="774" width="79" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lanao Del Norte" image="MINDANAO, Lanao Del Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Lanao Del Norte" popoverAnchorView="b3B-xk-OQn" id="Hdc-Ca-gzv">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eBJ-h2-oee" customClass="OBShapedButton">
+                                <rect key="frame" x="492" y="791" width="65" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lanao Del Sur" image="MINDANAO, Lanao Del Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Lanao Del Sur" popoverAnchorView="eBJ-h2-oee" id="Lz0-NB-qeH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="id2-Ub-FpJ" customClass="OBShapedButton">
+                                <rect key="frame" x="536" y="755" width="58" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bukidnon" image="MINDANAO, Bukidnon.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Bukidnon" popoverAnchorView="id2-Ub-FpJ" id="lhz-8w-6cb">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7t1-Bf-1M4" customClass="OBShapedButton">
+                                <rect key="frame" x="513" y="741" width="78" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Misamis Oriental" image="MINDANAO, Misamis Oriental.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Misamis Oriental" popoverAnchorView="7t1-Bf-1M4" id="3aN-7Y-fm0">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="em5-EG-I0H" customClass="OBShapedButton">
+                                <rect key="frame" x="471" y="764" width="30" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Misamis Occidental" image="MINDANAO, Misamis Occidental.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Misamis Occidental" popoverAnchorView="em5-EG-I0H" id="lAd-4i-oad">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DWS-af-Dra" customClass="OBShapedButton">
+                                <rect key="frame" x="618" y="801" width="63" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Davao Oriental" image="MINDANAO, Davao Oriental.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Davao Oriental" popoverAnchorView="DWS-af-Dra" id="PYz-gS-dgx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u63-9A-DC2" customClass="OBShapedButton">
+                                <rect key="frame" x="496" y="883" width="97" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sultan Kudarat" image="MINDANAO, Sultan Kudarat.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Sultan Kudarat" popoverAnchorView="u63-9A-DC2" id="sQT-5c-YVH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wYq-Ve-bG3" customClass="OBShapedButton">
+                                <rect key="frame" x="428" y="777" width="62" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zamboanga Del Sur" image="MINDANAO, Zamboanga Del Sur.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Zamboanga Del Sur" popoverAnchorView="wYq-Ve-bG3" id="URI-tx-zzT">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z94-JG-KSj" customClass="OBShapedButton">
+                                <rect key="frame" x="378" y="754" width="100" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zamboanga Del Norte" image="MINDANAO, Zamboanga Del Norte.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Zamboanga Del Norte" popoverAnchorView="z94-JG-KSj" id="uZc-BG-S0C">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fzb-GZ-KlN" customClass="OBShapedButton">
+                                <rect key="frame" x="388" y="803" width="63" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zamboanga Sibugay" image="MINDANAO, Zamboanga Sibugay.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Zamboanga Sibugay" popoverAnchorView="fzb-GZ-KlN" id="o5P-eF-2wZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQa-05-95Z" customClass="OBShapedButton">
+                                <rect key="frame" x="348" y="895" width="61" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Basilan" image="MINDANAO, Basilan.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Basilan" popoverAnchorView="lQa-05-95Z" id="PyY-83-amG">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f3U-H3-qoG" customClass="OBShapedButton">
+                                <rect key="frame" x="281" y="923" width="82" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sulu" image="MINDANAO, Sulu.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Sulu" popoverAnchorView="f3U-H3-qoG" id="nCs-Af-nNN">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7mv-ZY-yJG" customClass="OBShapedButton">
+                                <rect key="frame" x="172" y="955" width="139" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tawi-tawi" image="MINDANAO, Tawitawi.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Tawi-tawi" popoverAnchorView="7mv-ZY-yJG" id="biW-fd-7xN">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bbb-Ad-dKn" customClass="OBShapedButton">
+                                <rect key="frame" x="510" y="725" width="37" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camiguin" image="MINDANAO, Camiguin.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Camiguin" popoverAnchorView="bbb-Ad-dKn" id="2zK-5i-OOO">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uSw-Jf-MrK" customClass="OBShapedButton">
+                                <rect key="frame" x="340" y="20" width="37" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Batanes" image="LUZON, Batanes.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Batanes" popoverAnchorView="uSw-Jf-MrK" id="NLL-tm-CNQ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass, gray.png" id="06V-We-OaR">
+                                <rect key="frame" x="43" y="837" width="167" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="brx-J5-YJ6">
+                                <rect key="frame" x="14" y="140" width="108" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BACK, button with txt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_back_home:" destination="dkx-z0-nzr" eventType="touchUpInside" id="cDW-x5-d9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h4F-Xz-vou">
+                                <rect key="frame" x="17" y="51" width="105" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" image="RESET button, with text.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_reset:" destination="dkx-z0-nzr" eventType="touchUpInside" id="hr1-2Z-mNc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f6c-BT-hnl" customClass="OBShapedButton">
+                                <rect key="frame" x="378" y="833" width="33" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zamboanga City" image="MINDANAO, Zamboanga City.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wkJ-A5-Jya" kind="popover" identifier="Zamboanga City" popoverAnchorView="f6c-BT-hnl" id="Gwq-JQ-EWy">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scoreboard, LONG ver.png" id="Vx9-Sq-qEF">
+                                <rect key="frame" x="555" y="12" width="199" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qxi-X1-SnN">
+                                <rect key="frame" x="631" y="59" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="place_icon" destination="Qxi-X1-SnN" id="uB1-mQ-iCu"/>
+                        <outlet property="scoreBoard" destination="Vx9-Sq-qEF" id="roT-Ba-b2k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1294" y="-491"/>
+        </scene>
+        <!--View Controller Home - Home-->
+        <scene sceneID="DhU-qB-Ek1">
+            <objects>
+                <viewController storyboardIdentifier="Home" title="Home" id="qDa-oK-UTt" customClass="ViewController_Home" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="56d-D1-XgO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Homepage BG.jpg" id="1gq-01-ksm">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eJK-Pn-5EM" customClass="OBShapedButton">
+                                <rect key="frame" x="180" y="416" width="427" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="LEARN.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_learn:" destination="2tG-md-ItV" eventType="touchUpInside" id="JcQ-cg-Yc8"/>
+                                    <segue destination="GAq-ag-YQI" kind="modal" modalPresentationStyle="formSheet" id="QUH-Jt-N2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BG8-CV-dIA" customClass="OBShapedButton">
+                                <rect key="frame" x="180" y="610" width="399" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="PLAY.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_play:" destination="2tG-md-ItV" eventType="touchUpInside" id="Fka-Pz-ubU"/>
+                                    <segue destination="GAq-ag-YQI" kind="modal" modalPresentationStyle="formSheet" id="8hE-RI-eVV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ESTURYA.png" id="E1j-cO-i9c">
+                                <rect key="frame" x="256" y="8" width="256" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PH homepage LOGO.png" id="fKU-qA-oAF">
+                                <rect key="frame" x="29" y="136" width="700" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uRH-My-ftl">
+                                <rect key="frame" x="554" y="833" width="214" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" image="Learn Ilonggo, TAP TO SEE.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Learn Ilonggo, TAP TO SEE.png"/>
+                                <connections>
+                                    <action selector="btn_otherApps:" destination="2tG-md-ItV" eventType="touchUpInside" id="vyg-9i-UaU"/>
+                                    <segue destination="Tpf-FX-kXa" kind="modal" modalTransitionStyle="partialCurl" id="xj9-5Q-7VY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZpY-ML-bM2">
+                                <rect key="frame" x="-7" y="929" width="114" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="i, Credits copy bigger lighter.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ShP-Pd-vXv" kind="modal" modalTransitionStyle="flipHorizontal" id="xPK-GS-QNi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tG-md-ItV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1361" y="-2053"/>
+        </scene>
+        <!--Pop over Controller - Pop-over-->
+        <scene sceneID="BXc-rW-oXP">
+            <objects>
+                <viewController title="Pop-over" id="wkJ-A5-Jya" customClass="pop_overController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vze-Wr-VzM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f6r-qr-4aW">
+                                <rect key="frame" x="1" y="10" width="250" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0la-Yt-595">
+                                <rect key="frame" x="1" y="35" width="250" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rir-rg-T5c">
+                                <rect key="frame" x="34" y="160" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="HINT 50px.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="HINT 50px gray.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_hint:" destination="e9y-HM-TkP" eventType="touchUpInside" id="b6L-yH-ezy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PfE-6N-NkO">
+                                <rect key="frame" x="103" y="26" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4SV-jX-xk7">
+                                <rect key="frame" x="74" y="160" width="203" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="90"/>
+                    <connections>
+                        <outlet property="btnHintOutlet" destination="rir-rg-T5c" id="80w-7n-p6l"/>
+                        <outlet property="label_hintRemaining" destination="4SV-jX-xk7" id="dIJ-UH-NfV"/>
+                        <outlet property="nameOfPlacelabel" destination="f6r-qr-4aW" id="0to-tw-wNP"/>
+                        <outlet property="nameOfProvincelabel" destination="0la-Yt-595" id="Bfk-lw-k6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9y-HM-TkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="965"/>
+        </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="MgL-av-EEo">
+            <objects>
+                <viewController title="About" id="ShP-Pd-vXv" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHA-Xp-qBB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG, about page 3.jpg" id="rlw-Q2-dv4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uIU-OF-b7x">
+                                <rect key="frame" x="20" y="853" width="181" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BUTTON, back for Butud.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_backHomePage_about:" destination="I9I-vM-5yL" eventType="touchUpInside" id="Ixc-WM-K3h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wH3-hb-12J">
+                                <rect key="frame" x="378" y="513" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a2z-if-x6i">
+                                <rect key="frame" x="377" y="542" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X4M-yU-x5r">
+                                <rect key="frame" x="377" y="610" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dea-eP-ep5">
+                                <rect key="frame" x="377" y="639" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MNW-ke-dfV">
+                                <rect key="frame" x="377" y="709" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dkc-FZ-ab3">
+                                <rect key="frame" x="377" y="738" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="graphics" destination="wH3-hb-12J" id="wUO-En-TeD"/>
+                        <outlet property="nameOfDesigner" destination="a2z-if-x6i" id="4PT-Qm-lar"/>
+                        <outlet property="nameOfSoftwareDesigner" destination="dea-eP-ep5" id="Uot-DM-tVz"/>
+                        <outlet property="nameOfSoftwareProgramer" destination="Dkc-FZ-ab3" id="4jK-w5-8W2"/>
+                        <outlet property="softwareDesign_programming" destination="X4M-yU-x5r" id="gjk-Og-EA2"/>
+                        <outlet property="softwareProgramming" destination="MNW-ke-dfV" id="GZF-WY-agL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9I-vM-5yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="-2147"/>
+        </scene>
+        <!--Other Apps View Controller - Other Apps-->
+        <scene sceneID="EH8-pR-u7S">
+            <objects>
+                <viewController title="Other Apps" id="Tpf-FX-kXa" customClass="OtherAppsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebe-An-usk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG, Butud Page 2.jpg" id="rDG-Wl-arO">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qtz-Ik-IH9">
+                                <rect key="frame" x="179" y="424" width="411" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="10V-Lr-E1j">
+                                <rect key="frame" x="240" y="277" width="140" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="LEARN ILONGGO 1024px.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_link:" destination="0Ae-mK-PWz" eventType="touchUpInside" id="qW4-GR-8Qf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9NR-Zg-S0a">
+                                <rect key="frame" x="319" y="869" width="130" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="BUTTON, back for Butud.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_backHomePage:" destination="0Ae-mK-PWz" eventType="touchUpInside" id="cxl-FB-2nf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eiE-hK-FdQ">
+                                <rect key="frame" x="179" y="447" width="411" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xsw-1O-k2r">
+                                <rect key="frame" x="179" y="497" width="411" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XfD-62-ycn">
+                                <rect key="frame" x="179" y="561" width="411" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7p7-GT-lCq">
+                                <rect key="frame" x="179" y="617" width="411" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RUi-Re-7OW">
+                                <rect key="frame" x="192" y="741" width="384" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ja0-iH-U88">
+                                <rect key="frame" x="319" y="756" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="App Store">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_linkEsturyaWebsite:" destination="0Ae-mK-PWz" eventType="touchUpInside" id="4Bn-8k-jdJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kim-Tb-CTJ">
+                                <rect key="frame" x="407" y="277" width="140" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="LEARN TAGALOG 1024px.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_linkTagalog:" destination="0Ae-mK-PWz" eventType="touchUpInside" id="yI1-Aa-QRr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="defintionOfOtherApp_1" destination="Qtz-Ik-IH9" id="lfd-rj-DVs"/>
+                        <outlet property="defintionOfOtherApp_2" destination="eiE-hK-FdQ" id="p61-Zj-cOq"/>
+                        <outlet property="defintionOfOtherApp_3" destination="xsw-1O-k2r" id="GGB-Kh-F4J"/>
+                        <outlet property="defintionOfOtherApp_4" destination="XfD-62-ycn" id="1Fq-6L-pMz"/>
+                        <outlet property="defintionOfOtherApp_5" destination="7p7-GT-lCq" id="zLL-3V-oN9"/>
+                        <outlet property="defintionOfOtherApp_6" destination="RUi-Re-7OW" id="3hu-c3-Ge4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ae-mK-PWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="-792"/>
+        </scene>
+        <!--Mode View Controller - Mode-->
+        <scene sceneID="5zA-vT-QRj">
+            <objects>
+                <viewController title="Mode" id="GAq-ag-YQI" customClass="ModeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Adz-Yq-dYl">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLURRED BG, green.jpg" id="rWg-B6-fh0">
+                                <rect key="frame" x="0.0" y="-67" width="540" height="694"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sxR-b7-kEu">
+                                <rect key="frame" x="112" y="89" width="305" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="province:" destination="eyq-9A-PvZ" eventType="touchUpInside" id="aj0-N1-N9P"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="CrW-eW-eiI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oWv-xq-vrQ">
+                                <rect key="frame" x="112" y="381" width="345" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button2">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="capital:" destination="eyq-9A-PvZ" eventType="touchUpInside" id="GrG-vp-bNa"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="8mE-IA-H1e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZmF-OA-RaA">
+                                <rect key="frame" x="8" y="44" width="75" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Back Button Small.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qDa-oK-UTt" kind="modal" modalTransitionStyle="crossDissolve" id="HTY-eT-HeI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="sxR-b7-kEu" id="FkE-sZ-Fvg"/>
+                        <outlet property="btn2" destination="oWv-xq-vrQ" id="IoD-VV-OHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyq-9A-PvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2322" y="-1178"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BACK, button with txt.png" width="245" height="189"/>
+        <image name="BACKGROUND, Biege Play.jpg" width="2000" height="2615"/>
+        <image name="BG, Butud Page 2.jpg" width="1536" height="2048"/>
+        <image name="BG, about page 3.jpg" width="1536" height="2048"/>
+        <image name="BLURRED BG, green.jpg" width="2000" height="2615"/>
+        <image name="BUTTON, back for Butud.png" width="245" height="189"/>
+        <image name="Back Button Small.png" width="100" height="77"/>
+        <image name="Compass, gray.png" width="402" height="404"/>
+        <image name="ESTURYA.png" width="190" height="101"/>
+        <image name="HINT 50px gray.png" width="50" height="50"/>
+        <image name="HINT 50px.png" width="50" height="50"/>
+        <image name="Homepage BG.jpg" width="768" height="1024"/>
+        <image name="LEARN ILONGGO 1024px.jpg" width="1024" height="1024"/>
+        <image name="LEARN TAGALOG 1024px.png" width="1024" height="1024"/>
+        <image name="LEARN.png" width="413" height="170"/>
+        <image name="LUZON, Abra.png" width="143" height="152"/>
+        <image name="LUZON, Albay.png" width="175" height="117"/>
+        <image name="LUZON, Apayao.png" width="216" height="242"/>
+        <image name="LUZON, Aurora.png" width="190" height="273"/>
+        <image name="LUZON, Bataan.png" width="91" height="105"/>
+        <image name="LUZON, Batanes.png" width="100" height="166"/>
+        <image name="LUZON, Batangas.png" width="170" height="141"/>
+        <image name="LUZON, Benguet.png" width="89" height="150"/>
+        <image name="LUZON, Bulacan.png" width="160" height="130"/>
+        <image name="LUZON, Cagayan.png" width="263" height="277"/>
+        <image name="LUZON, Camarines Norte.png" width="150" height="110"/>
+        <image name="LUZON, Camarines Sur.png" width="219" height="152"/>
+        <image name="LUZON, Catanduanes.png" width="99" height="148"/>
+        <image name="LUZON, Cavite.png" width="106" height="134"/>
+        <image name="LUZON, Ifugao.png" width="126" height="90"/>
+        <image name="LUZON, Ilocos Norte.png" width="157" height="175"/>
+        <image name="LUZON, Ilocos Sur.png" width="140" height="311"/>
+        <image name="LUZON, Isabela.png" width="194" height="237"/>
+        <image name="LUZON, Kalinga.png" width="154" height="80"/>
+        <image name="LUZON, La Union.png" width="91" height="169"/>
+        <image name="LUZON, Laguna.png" width="86" height="99"/>
+        <image name="LUZON, Marinduque.png" width="94" height="80"/>
+        <image name="LUZON, Masbate.png" width="257" height="245"/>
+        <image name="LUZON, Mt. Province.png" width="123" height="78"/>
+        <image name="LUZON, Natinal Capital Region.png" width="43" height="68"/>
+        <image name="LUZON, Nueva Ecija.png" width="160" height="164"/>
+        <image name="LUZON, Nueva Vizcaya.png" width="154" height="171"/>
+        <image name="LUZON, Occidental Mindoro.png" width="176" height="226"/>
+        <image name="LUZON, Oriental Mindoro.png" width="126" height="212"/>
+        <image name="LUZON, Palawan.png" width="519" height="717"/>
+        <image name="LUZON, Pampanga.png" width="95" height="86"/>
+        <image name="LUZON, Pangasinan.png" width="216" height="147"/>
+        <image name="LUZON, Quezon.png" width="269" height="336"/>
+        <image name="LUZON, Quirino.png" width="151" height="174"/>
+        <image name="LUZON, Rizal.png" width="56" height="84"/>
+        <image name="LUZON, Romblon.png" width="148" height="114"/>
+        <image name="LUZON, Sorsogon.png" width="138" height="128"/>
+        <image name="LUZON, Tarlac.png" width="122" height="127"/>
+        <image name="LUZON, Zambales.png" width="127" height="246"/>
+        <image name="Learn Ilonggo, TAP TO SEE.png" width="214" height="191"/>
+        <image name="MINDANAO, Agusan Del Norte.png" width="94" height="162"/>
+        <image name="MINDANAO, Agusan Del Sur.png" width="176" height="195"/>
+        <image name="MINDANAO, Basilan.png" width="137" height="84"/>
+        <image name="MINDANAO, Bukidnon.png" width="136" height="219"/>
+        <image name="MINDANAO, Camiguin.png" width="103" height="115"/>
+        <image name="MINDANAO, Compostela Valley.png" width="128" height="158"/>
+        <image name="MINDANAO, Cotabato.png" width="161" height="160"/>
+        <image name="MINDANAO, Davao Del Norte.png" width="127" height="166"/>
+        <image name="MINDANAO, Davao Del Sur.png" width="116" height="194"/>
+        <image name="MINDANAO, Davao Occidental.png" width="100" height="183"/>
+        <image name="MINDANAO, Davao Oriental.png" width="149" height="320"/>
+        <image name="MINDANAO, Dinagat Islands.png" width="125" height="133"/>
+        <image name="MINDANAO, Lanao Del Norte.png" width="193" height="132"/>
+        <image name="MINDANAO, Lanao Del Sur.png" width="164" height="131"/>
+        <image name="MINDANAO, Maguindanao.png" width="179" height="173"/>
+        <image name="MINDANAO, Misamis Occidental.png" width="75" height="97"/>
+        <image name="MINDANAO, Misamis Oriental.png" width="187" height="106"/>
+        <image name="MINDANAO, Sarangani.png" width="235" height="174"/>
+        <image name="MINDANAO, South Cotabato.png" width="190" height="125"/>
+        <image name="MINDANAO, Sultan Kudarat.png" width="245" height="150"/>
+        <image name="MINDANAO, Sulu.png" width="196" height="123"/>
+        <image name="MINDANAO, Surigao Del Norte.png" width="130" height="100"/>
+        <image name="MINDANAO, Surigao Del Sur.png" width="127" height="299"/>
+        <image name="MINDANAO, Tawitawi.png" width="296" height="112"/>
+        <image name="MINDANAO, Zamboanga City.png" width="86" height="102"/>
+        <image name="MINDANAO, Zamboanga Del Norte.png" width="263" height="261"/>
+        <image name="MINDANAO, Zamboanga Del Sur.png" width="138" height="179"/>
+        <image name="MINDANAO, Zamboanga Sibugay.png" width="173" height="125"/>
+        <image name="PH homepage LOGO.png" width="700" height="256"/>
+        <image name="PLAY.png" width="381" height="116"/>
+        <image name="RESET button, with text.png" width="245" height="189"/>
+        <image name="Scoreboard, LONG ver.png" width="616" height="739"/>
+        <image name="VISAYAS, Aklan.png" width="117" height="79"/>
+        <image name="VISAYAS, Antique.png" width="86" height="244"/>
+        <image name="VISAYAS, Biliran.png" width="88" height="63"/>
+        <image name="VISAYAS, Bohol.png" width="152" height="120"/>
+        <image name="VISAYAS, Capiz.png" width="188" height="74"/>
+        <image name="VISAYAS, Cebu.png" width="160" height="342"/>
+        <image name="VISAYAS, Eastern Samar.png" width="104" height="244"/>
+        <image name="VISAYAS, Guimaras.png" width="78" height="132"/>
+        <image name="VISAYAS, Iloilo.png" width="210" height="198"/>
+        <image name="VISAYAS, Leyte.png" width="177" height="209"/>
+        <image name="VISAYAS, Negros Occidental.png" width="211" height="289"/>
+        <image name="VISAYAS, Negros Oriental.png" width="137" height="270"/>
+        <image name="VISAYAS, Northern Samar.png" width="199" height="68"/>
+        <image name="VISAYAS, Samar.png" width="205" height="230"/>
+        <image name="VISAYAS, Siquijor.png" width="105" height="89"/>
+        <image name="VISAYAS, Southern Leyte.png" width="118" height="153"/>
+        <image name="i, Credits copy bigger lighter.png" width="65" height="65"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="QUH-Jt-N2u"/>
+        <segue reference="CrW-eW-eiI"/>
+        <segue reference="xSb-Ez-svw"/>
+    </inferredMetricsTieBreakers>
+</document>
